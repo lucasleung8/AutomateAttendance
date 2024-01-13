@@ -5,17 +5,18 @@ from selenium.webdriver.common.keys import Keys
 import time
 import datetime
 
-# ---user configurable options---
+# ---user configurable options--- #
+
 ics4uLink = "https://docs.google.com/spreadsheets/d/17mWdVgPJ0xo1qb0GAQLTVXSLu1_jl8bqeM3H4McVFeI/edit#gid=0&range=D2" # paste in your link to the cell from the attendance spreadsheet
 tej34mLink = "https://docs.google.com/spreadsheets/d/1kPNp01St8eahSrfadigF5NHyBvvdxaplhzLufCYWfpU/edit#gid=0&range=D1" # paste in your link to the cell from the attendance spreadsheet
-
-# create datetime object from datetime class then format it nicely
-currentDate = datetime.datetime.now().strftime("%b %d")
-
 # driver = webdriver.Chrome() # assumes you use Chrome, uncomment whatever browser you use
 driver = webdriver.Edge()
 # driver = webdriver.Firefox()
 
+# ---user configurable options--- #
+
+# create datetime object from datetime class then format nicely
+currentDate = datetime.datetime.now().strftime("%b %d")
 actions = ActionChains(driver)
 
 # create new column to left, with via Actions API/Action Chains
@@ -33,6 +34,8 @@ actions.perform()
 
 # delay
 time.sleep(2)
+
+# clear actions object
 actions.reset_actions()
 
 # tej34m
