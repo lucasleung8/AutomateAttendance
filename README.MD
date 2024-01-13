@@ -1,6 +1,6 @@
 # AutomateAttendance
 
-Small tool built with Selenium that automatically types "Here" under my name in the Google Sheets attendance for my classes, saving ~10s each day. The same exact cell needs to be filled every morning I'm present, thus automation is simple.
+Small tool built with Selenium for my CS teacher that automatically creates a new column for the Google Sheets attendance with the date, saving time each day.
 
 ## How It Works
 1. You run the script
@@ -20,5 +20,4 @@ Pre-requisites: Python 3
 ## Features
 - Cross-browser
 - Cross-platform
-- Fast and efficent
 - One less thing to worry about during the day so you can focus on what actually matters
