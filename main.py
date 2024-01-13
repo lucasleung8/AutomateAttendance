@@ -13,6 +13,8 @@ tej34mLink = "https://docs.google.com/spreadsheets/d/1kPNp01St8eahSrfadigF5NHyBv
 driver = webdriver.Edge()
 # driver = webdriver.Firefox()
 
+delay = 2 # seconds passing after column created
+
 # ---user configurable options--- #
 
 # create datetime object from datetime class then format nicely
@@ -26,14 +28,14 @@ actions = ActionChains(driver)
 driver.get(ics4uLink)
 actions.key_down(Keys.LEFT_ALT).key_down(Keys.LEFT_SHIFT)
 actions.send_keys("i").send_keys("c")
-time.sleep(0.5)
+# time.sleep(0.5)
 actions.send_keys("c")
 actions.key_up(Keys.LEFT_ALT).key_up(Keys.LEFT_SHIFT)
 actions.send_keys(currentDate).send_keys(Keys.RETURN)
 actions.perform()
 
 # delay
-time.sleep(2)
+time.sleep(delay)
 
 # clear actions object
 actions.reset_actions()
@@ -42,14 +44,14 @@ actions.reset_actions()
 driver.get(tej34mLink)
 actions.key_down(Keys.LEFT_ALT).key_down(Keys.LEFT_SHIFT)
 actions.send_keys("i").send_keys("c")
-time.sleep(0.5)
+# time.sleep(0.5)
 actions.send_keys("c")
 actions.key_up(Keys.LEFT_ALT).key_up(Keys.LEFT_SHIFT)
 actions.send_keys(currentDate).send_keys(Keys.RETURN)
 actions.perform()
 
 # delay
-time.sleep(2)
+time.sleep(delay)
 
 # quit browser
 driver.quit()
