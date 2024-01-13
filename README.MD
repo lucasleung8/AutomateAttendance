@@ -4,5 +4,4 @@ Small tool built with Selenium for my CS teacher that automatically creates a ne
 
 ## Features
 - Cross-browser
-- Cross-platform
 - One less thing to worry about during the day so you can focus on what actually matters
