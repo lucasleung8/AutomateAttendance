@@ -8,7 +8,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 # ---user configurable options---
-cellLink = "https://docs.google.com/spreadsheets/d/17mWdVgPJ0xo1qb0GAQLTVXSLu1_jl8bqeM3H4McVFeI/edit#gid=0&range=D1" # paste in your link to the cell from the attendance spreadsheet
+cellLink = "" # paste in your link to the cell from the attendance spreadsheet
 # driver = webdriver.Chrome() # assumes you use Chrome, uncomment whatever browser you use
 driver = webdriver.Edge()
 # driver = webdriver.Firefox()
