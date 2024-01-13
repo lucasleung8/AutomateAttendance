@@ -40,7 +40,6 @@ actions.reset_actions()
 
 # tej34m
 driver.get(tej34mLink)
-
 actions.key_down(Keys.LEFT_ALT).key_down(Keys.LEFT_SHIFT)
 actions.send_keys("i").send_keys("c")
 time.sleep(1)
@@ -48,7 +47,6 @@ actions.send_keys("c")
 actions.key_up(Keys.LEFT_ALT).key_up(Keys.LEFT_SHIFT)
 actions.send_keys(currentDate).send_keys(Keys.RETURN)
 actions.perform()
-
 
 # delay
 time.sleep(2)
