@@ -9,8 +9,8 @@ import datetime
 
 ics4uLink = "https://docs.google.com/spreadsheets/d/17mWdVgPJ0xo1qb0GAQLTVXSLu1_jl8bqeM3H4McVFeI/edit#gid=0&range=D2" # paste in your link to the cell from the attendance spreadsheet
 tej34mLink = "https://docs.google.com/spreadsheets/d/1kPNp01St8eahSrfadigF5NHyBvvdxaplhzLufCYWfpU/edit#gid=0&range=D1" # paste in your link to the cell from the attendance spreadsheet
-driver = webdriver.Chrome() #uncomment whatever browser you use
-# driver = webdriver.Edge()
+# driver = webdriver.Chrome() #uncomment whatever browser you use
+driver = webdriver.Edge()
 # driver = webdriver.Firefox()
 
 delay = 2 # seconds passing after column created
