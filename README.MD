@@ -1,8 +1,9 @@
 # AutomateAttendance
 
-Small tool built with Selenium for my CS teacher that automatically creates a new column for the Google Sheets attendance with the date, saving time each day.
+A simple Selenium tool I designed as a personal non-class project to automate creating daily attendance columns in Google Sheets for my high school CS teacher, eliminating the need for manual setup and saving valuable time.
 
-Note: execute whatever exe your browser is
+## Usage
+Download and execute whatever exe your browser is
 
 ## Features
 - Cross-browser
